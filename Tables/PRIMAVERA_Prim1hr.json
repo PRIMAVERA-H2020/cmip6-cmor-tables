@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table Prim1hr", 
         "realm": "atmos", 
-        "frequency": "1hr", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "rsdsmin": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -33,6 +33,7 @@
             "primavera_priority": "2"
         }, 
         "rsdsdiffmin": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -51,6 +52,7 @@
             "primavera_priority": "2"
         }, 
         "wind100mmin": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -69,6 +71,7 @@
             "primavera_priority": "2"
         }, 
         "wind100mmax": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -87,6 +90,7 @@
             "primavera_priority": "2"
         }, 
         "uas": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -105,6 +109,7 @@
             "primavera_priority": "1"
         }, 
         "wsgmax": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed_of_gust", 
             "units": "m s-1", 
@@ -123,6 +128,7 @@
             "primavera_priority": "2"
         }, 
         "wind50mmin": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -141,6 +147,7 @@
             "primavera_priority": "2"
         }, 
         "wsgmax100m": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed_of_gust", 
             "units": "m s-1", 
@@ -159,6 +166,7 @@
             "primavera_priority": "2"
         }, 
         "rsdsdiff": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -177,6 +185,7 @@
             "primavera_priority": "1"
         }, 
         "ps": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_air_pressure", 
             "units": "Pa", 
@@ -195,6 +204,7 @@
             "primavera_priority": "2"
         }, 
         "va50m": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -213,6 +223,7 @@
             "primavera_priority": "1"
         }, 
         "tas": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -231,6 +242,7 @@
             "primavera_priority": "2"
         }, 
         "wind50mmax": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -249,6 +261,7 @@
             "primavera_priority": "2"
         }, 
         "rsdsmax": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -267,6 +280,7 @@
             "primavera_priority": "2"
         }, 
         "wsgmax50m": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed_of_gust", 
             "units": "m s-1", 
@@ -285,6 +299,7 @@
             "primavera_priority": "2"
         }, 
         "rsdsdiffmax": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -303,6 +318,7 @@
             "primavera_priority": "2"
         }, 
         "vas": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -321,6 +337,7 @@
             "primavera_priority": "1"
         }, 
         "va100m": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -339,9 +356,10 @@
             "primavera_priority": "1"
         }, 
         "clt": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "cloud_area_fraction_in_atmosphere_layer", 
-            "units": "1", 
+            "units": "1.0", 
             "cell_methods": "time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Cloud Area Fraction", 
@@ -357,6 +375,7 @@
             "primavera_priority": "2"
         }, 
         "rsds": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -375,6 +394,7 @@
             "primavera_priority": "1"
         }, 
         "ua100m": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -393,6 +413,7 @@
             "primavera_priority": "1"
         }, 
         "sfcWindmin": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -411,6 +432,7 @@
             "primavera_priority": "2"
         }, 
         "sfcWindmax": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -429,6 +451,7 @@
             "primavera_priority": "2"
         }, 
         "ua50m": {
+            "frequency": "1hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 

@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table PrimOmon", 
         "realm": "ocean", 
-        "frequency": "mon", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "30.00000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "tomint": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "integral_wrt_depth_of_product_of_sea_water_density_and_prognostic_temperature", 
             "units": "1e-3 kg m-2", 
@@ -33,6 +33,7 @@
             "primavera_priority": "1"
         }, 
         "uso": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "product_of_xward_sea_water_velocity_and_salinity", 
             "units": "m s-1", 
@@ -51,6 +52,7 @@
             "primavera_priority": "1"
         }, 
         "w2o": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "square_of_sea_water_upward_velocity", 
             "units": "m2 s-2", 
@@ -69,6 +71,7 @@
             "primavera_priority": "1"
         }, 
         "u2o": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "square_of_sea_water_x_velocity", 
             "units": "m2 s-2", 
@@ -87,6 +90,7 @@
             "primavera_priority": "1"
         }, 
         "uto": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "product_of_xward_sea_water_velocity_and_temperature", 
             "units": "degree_Celsius m s-1", 
@@ -105,6 +109,7 @@
             "primavera_priority": "1"
         }, 
         "vto": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "product_of_yward_sea_water_velocity_and_temperature", 
             "units": "degree_Celsius m s-1", 
@@ -123,6 +128,7 @@
             "primavera_priority": "1"
         }, 
         "wo": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "upward_sea_water_velocity", 
             "units": "m s-1", 
@@ -141,6 +147,7 @@
             "primavera_priority": "1"
         }, 
         "somint": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "integral_wrt_depth_of_product_of_sea_water_density_and_prognostic_salinity", 
             "units": "1e-3 kg m-2", 
@@ -159,6 +166,7 @@
             "primavera_priority": "1"
         }, 
         "wso": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "product_of_upward_sea_water_velocity_and_salinity", 
             "units": "m s-1", 
@@ -177,6 +185,7 @@
             "primavera_priority": "1"
         }, 
         "opottemptend": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content", 
             "units": "W m-2", 
@@ -195,6 +204,7 @@
             "primavera_priority": "1"
         }, 
         "wto": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "product_of_upward_sea_water_velocity_and_salinity", 
             "units": "degree_Celsius m s-1", 
@@ -213,6 +223,7 @@
             "primavera_priority": "1"
         }, 
         "v2o": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "square_of_sea_water_y_velocity", 
             "units": "m2 s-2", 
@@ -231,6 +242,7 @@
             "primavera_priority": "1"
         }, 
         "vso": {
+            "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "product_of_yward_sea_water_velocity_and_salinity", 
             "units": "m s-1", 

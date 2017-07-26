@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table Prim6hrPt", 
         "realm": "land atmos ocean", 
-        "frequency": "6hr", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "0.250000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "tso": {
+            "frequency": "6hr", 
             "modeling_realm": "ocean", 
             "standard_name": "sea_surface_temperature", 
             "units": "K", 
@@ -33,6 +33,7 @@
             "primavera_priority": "1"
         }, 
         "ua100m": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -51,6 +52,7 @@
             "primavera_priority": "1"
         }, 
         "va100m": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -69,6 +71,7 @@
             "primavera_priority": "1"
         }, 
         "va50m": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -87,6 +90,7 @@
             "primavera_priority": "1"
         }, 
         "ps": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_air_pressure", 
             "units": "Pa", 
@@ -105,9 +109,10 @@
             "primavera_priority": "1"
         }, 
         "hus1000": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
-            "units": "1", 
+            "units": "1.0", 
             "cell_methods": "time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Specific Humidity at 1000 hPa", 
@@ -123,6 +128,7 @@
             "primavera_priority": "1"
         }, 
         "thetapv2": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "theta_on_pv2_surface", 
             "units": "K", 
@@ -141,6 +147,7 @@
             "primavera_priority": "1"
         }, 
         "clt": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "cloud_area_fraction", 
             "units": "%", 
@@ -159,6 +166,7 @@
             "primavera_priority": "1"
         }, 
         "ua1000": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -177,6 +185,7 @@
             "primavera_priority": "1"
         }, 
         "tslsi": {
+            "frequency": "6hr", 
             "modeling_realm": "land", 
             "standard_name": "surface_temperature", 
             "units": "K", 
@@ -195,6 +204,7 @@
             "primavera_priority": "1"
         }, 
         "va1000": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -213,6 +223,7 @@
             "primavera_priority": "1"
         }, 
         "ua50m": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 

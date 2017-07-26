@@ -22,12 +22,12 @@ import os
 from openpyxl import load_workbook
 
 
-EXCEL_FILE = 'PRIMAVERA_Data_Request_v01_00_07.xlsx'
+EXCEL_FILE = 'PRIMAVERA_Data_Request_v01_00_13.xlsx'
 
 HEADER_COMMON = {
-    'data_specs_version': '01.00.07',
+    'data_specs_version': '01.00.13',
     'cmor_version': '3.2',
-    'table_date': '22 April 2017',
+    'table_date': '12 July 2017',
     'missing_value': '1e20',
     'product': 'model-output',
     'generic_levels': '',
@@ -52,26 +52,27 @@ def generate_header(table_name):
     # set the table name
     header['table_id'] = 'Table {}'.format(table_name)
 
-    # set the frequency
+    # calculate the frequency
     # there are no intervals for 1 hr in the existing tables and so this is
     # always blank
     frequencies = {'mon': '30.00000', 'day': '1.00000', '6hr': '0.250000',
                    '3hr': '0.125000', '1hr': ''}
+    frequency = None
     for freq in frequencies:
         if freq in table_name.lower():
-            header['frequency'] = freq
+            frequency = freq
             break
 
-    if 'frequency' not in header:
+    if not 'frequency':
         msg = ('Unable to determine frequency for table name: {}'.
                format(table_name))
         raise ValueError(msg)
 
+    # can now set the approx_interval
+    header['approx_interval'] = frequencies[frequency]
+
     # create a blank realm, which will be populated later
     header['realm'] = ''
-
-    # set the approx_interval
-    header['approx_interval'] = frequencies[header['frequency']]
 
     ordered_keys = ['data_specs_version', 'table_id', 'realm', 'frequency',
                     'cmor_version', 'table_date', 'missing_value', 'product',
@@ -93,10 +94,11 @@ def generate_variable_entry(req_sheet, output):
     :param dict output: The `variable_entry` dictionary from the output
         dictionary that will be converted to a JSON file
     """
-    ordered_keys = ['modeling_realm', 'standard_name', 'units', 'cell_methods',
-                    'cell_measures', 'long_name', 'comment', 'dimensions',
-                    'out_name', 'type', 'positive', 'valid_min', 'valid_max',
-                    'ok_min_mean_abs', 'ok_max_mean_abs', 'primavera_priority']
+    ordered_keys = ['frequency', 'modeling_realm', 'standard_name', 'units',
+                    'cell_methods', 'cell_measures', 'long_name', 'comment',
+                    'dimensions', 'out_name', 'type', 'positive', 'valid_min',
+                    'valid_max', 'ok_min_mean_abs', 'ok_max_mean_abs',
+                    'primavera_priority']
     key_order = {key: index for index, key in enumerate(ordered_keys)}
 
     for row in req_sheet.iter_rows(min_row=2):
@@ -115,10 +117,10 @@ def generate_variable_entry(req_sheet, output):
 
         # these are the standard components that can be obtained directly from
         # the data request
-        direct_components = ['modeling_realm', 'standard_name', 'units',
-                             'cell_methods', 'cell_measures', 'long_name',
-                             'comment', 'dimensions', 'type', 'positive',
-                             'primavera_priority']
+        direct_components = ['frequency', 'modeling_realm', 'standard_name',
+                             'units', 'cell_methods', 'cell_measures',
+                             'long_name', 'comment', 'dimensions', 'type',
+                             'positive', 'primavera_priority']
 
         # add these standard components
         for cmpt in direct_components:
@@ -181,9 +183,13 @@ def main():
         with open(output_path, 'w') as dest_file:
             json.dump(output, dest_file, indent=4)
 
-    # Make a PRIMAVERA copy of CMIP6_coordinate.json
+    # Make a PRIMAVERA copy of the reference files
+    shutil.copyfile(os.path.join(table_dir, 'CMIP6_CV.json'),
+                    os.path.join(table_dir, 'PRIMAVERA_CV.json'))
     shutil.copyfile(os.path.join(table_dir, 'CMIP6_coordinate.json'),
                     os.path.join(table_dir, 'PRIMAVERA_coordinate.json'))
+    shutil.copyfile(os.path.join(table_dir, 'CMIP6_formula_terms.json'),
+                    os.path.join(table_dir, 'PRIMAVERA_formula_terms.json'))
 
 
 def _get_cell(row, column_name):
@@ -210,6 +216,10 @@ def _get_cell(row, column_name):
     if cell_str == 'None':
         cell_str = ''
 
+    # Make sure that PRIMAVERA priority is an integer
+    if column_name == 'primavera_priority':
+        cell_str = cell_str.rstrip('.0')
+
     return cell_str
 
 
@@ -226,7 +236,8 @@ def _fix_units(units):
         'degree_C': 'degree_Celsius',
         'degree_C m s-1': 'degree_Celsius m s-1',
         '1/s': 's-1',
-        'kg/s': 'kg s-1'
+        'kg/s': 'kg s-1',
+        '1': '1.0'
     }
 
     if units in corrections:

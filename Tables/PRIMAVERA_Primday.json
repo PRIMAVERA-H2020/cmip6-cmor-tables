@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table Primday", 
         "realm": "atmos land", 
-        "frequency": "day", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "1.00000", 
@@ -14,7 +13,27 @@
         "Conventions": "CF-1.7 CMIP-6.0"
     }, 
     "variable_entry": {
+        "zg19": {
+            "frequency": "day", 
+            "modeling_realm": "atmos", 
+            "standard_name": "geopotential_height", 
+            "units": "m", 
+            "cell_methods": "time: mean", 
+            "cell_measures": "area: areacella", 
+            "long_name": "Geopotential Height", 
+            "comment": "", 
+            "dimensions": "longitude latitude plev19 time", 
+            "out_name": "zg19", 
+            "type": "", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": "", 
+            "primavera_priority": "2"
+        }, 
         "va23": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -32,7 +51,27 @@
             "ok_max_mean_abs": "", 
             "primavera_priority": "3"
         }, 
+        "zg10": {
+            "frequency": "day", 
+            "modeling_realm": "atmos", 
+            "standard_name": "geopotential_height", 
+            "units": "m", 
+            "cell_methods": "time: mean", 
+            "cell_measures": "area: areacella", 
+            "long_name": "Geopotential Height", 
+            "comment": "", 
+            "dimensions": "longitude latitude plev10 time", 
+            "out_name": "zg10", 
+            "type": "", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": "", 
+            "primavera_priority": "1"
+        }, 
         "hus10": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
             "units": "1.0", 
@@ -51,6 +90,7 @@
             "primavera_priority": "1"
         }, 
         "ua10": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -69,6 +109,7 @@
             "primavera_priority": "1"
         }, 
         "hus19": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
             "units": "1.0", 
@@ -87,6 +128,7 @@
             "primavera_priority": "2"
         }, 
         "ua19": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -105,6 +147,7 @@
             "primavera_priority": "2"
         }, 
         "wap23": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "lagrangian_tendency_of_air_pressure", 
             "units": "Pa s-1", 
@@ -123,6 +166,7 @@
             "primavera_priority": "3"
         }, 
         "hus23": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
             "units": "1.0", 
@@ -141,6 +185,7 @@
             "primavera_priority": "3"
         }, 
         "ts": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_temperature", 
             "units": "K", 
@@ -159,6 +204,7 @@
             "primavera_priority": "1"
         }, 
         "mrso": {
+            "frequency": "day", 
             "modeling_realm": "land", 
             "standard_name": "soil_moisture_content", 
             "units": "kg m-2", 
@@ -177,6 +223,7 @@
             "primavera_priority": "1"
         }, 
         "prmin": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "precipitation_flux", 
             "units": "kg m-2 s-1", 
@@ -195,6 +242,7 @@
             "primavera_priority": "1"
         }, 
         "ta23": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -213,6 +261,7 @@
             "primavera_priority": "3"
         }, 
         "uneutrals": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_neurtral_wind", 
             "units": "m s-1", 
@@ -231,6 +280,7 @@
             "primavera_priority": "1"
         }, 
         "vneutrals": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_neutral_wind", 
             "units": "m s-1", 
@@ -249,6 +299,7 @@
             "primavera_priority": "1"
         }, 
         "zg23": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "geopotential_height", 
             "units": "m", 
@@ -267,6 +318,7 @@
             "primavera_priority": "3"
         }, 
         "va19": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -285,6 +337,7 @@
             "primavera_priority": "2"
         }, 
         "mrlsl": {
+            "frequency": "day", 
             "modeling_realm": "land", 
             "standard_name": "moisture_content_of_soil_layer", 
             "units": "kg m-2", 
@@ -303,6 +356,7 @@
             "primavera_priority": "1"
         }, 
         "va10": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -321,6 +375,7 @@
             "primavera_priority": "1"
         }, 
         "ta19": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -339,6 +394,7 @@
             "primavera_priority": "2"
         }, 
         "ta10": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -357,6 +413,7 @@
             "primavera_priority": "1"
         }, 
         "evspsbl": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "water_evaporation_flux", 
             "units": "kg m-2 s-1", 
@@ -375,6 +432,7 @@
             "primavera_priority": "1"
         }, 
         "ua23": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -393,6 +451,7 @@
             "primavera_priority": "3"
         }, 
         "wap19": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "lagrangian_tendency_of_air_pressure", 
             "units": "Pa s-1", 
@@ -411,6 +470,7 @@
             "primavera_priority": "2"
         }, 
         "wap10": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "lagrangian_tendency_of_air_pressure", 
             "units": "Pa s-1", 
@@ -429,6 +489,7 @@
             "primavera_priority": "1"
         }, 
         "prmax": {
+            "frequency": "day", 
             "modeling_realm": "atmos", 
             "standard_name": "precipitation_flux", 
             "units": "kg m-2 s-1", 

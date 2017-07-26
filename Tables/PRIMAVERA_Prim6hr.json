@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table Prim6hr", 
         "realm": "atmos land", 
-        "frequency": "6hr", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "0.250000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "prc": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_precipitation_flux", 
             "units": "kg m-2 s-1", 
@@ -33,6 +33,7 @@
             "primavera_priority": "1"
         }, 
         "rsuscs": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upwelling_shortwave_flux_in_air_assuming_clear_sky", 
             "units": "W m-2", 
@@ -51,6 +52,7 @@
             "primavera_priority": "1"
         }, 
         "tntrs": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_shortwave_heating", 
             "units": "K s-1", 
@@ -69,6 +71,7 @@
             "primavera_priority": "1"
         }, 
         "wsgmax": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed_of_gust", 
             "units": "m s-1", 
@@ -87,6 +90,7 @@
             "primavera_priority": "1"
         }, 
         "hfss": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upward_sensible_heat_flux", 
             "units": "W m-2", 
@@ -105,6 +109,7 @@
             "primavera_priority": "1"
         }, 
         "prsn": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "snowfall_flux", 
             "units": "kg m-2 s-1", 
@@ -123,6 +128,7 @@
             "primavera_priority": "1"
         }, 
         "rldscs": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_longwave_flux_in_air_assuming_clear_sky", 
             "units": "W m-2", 
@@ -141,6 +147,7 @@
             "primavera_priority": "1"
         }, 
         "rsdsdiff": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -159,6 +166,7 @@
             "primavera_priority": "1"
         }, 
         "pr": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "precipitation_flux", 
             "units": "kg m-2 s-1", 
@@ -177,6 +185,7 @@
             "primavera_priority": "1"
         }, 
         "ps": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_air_pressure", 
             "units": "Pa", 
@@ -195,6 +204,7 @@
             "primavera_priority": "1"
         }, 
         "rlus": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upwelling_longwave_flux_in_air", 
             "units": "W m-2", 
@@ -213,6 +223,7 @@
             "primavera_priority": "1"
         }, 
         "rlds": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_longwave_flux_in_air", 
             "units": "W m-2", 
@@ -231,6 +242,7 @@
             "primavera_priority": "1"
         }, 
         "clt": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "cloud_area_fraction", 
             "units": "1.0", 
@@ -249,6 +261,7 @@
             "primavera_priority": "1"
         }, 
         "rsdscs": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air_assuming_clear_sky", 
             "units": "W m-2", 
@@ -267,6 +280,7 @@
             "primavera_priority": "1"
         }, 
         "tntc": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_convection", 
             "units": "K s-1", 
@@ -285,6 +299,7 @@
             "primavera_priority": "1"
         }, 
         "tntpbl": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_boundary_layer_mixing", 
             "units": "K s-1", 
@@ -303,6 +318,7 @@
             "primavera_priority": "1"
         }, 
         "hus4": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
             "units": "1.0", 
@@ -321,6 +337,7 @@
             "primavera_priority": "1"
         }, 
         "ua4": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -339,6 +356,7 @@
             "primavera_priority": "1"
         }, 
         "rsds": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -357,6 +375,7 @@
             "primavera_priority": "1"
         }, 
         "tntscp": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_stratiform_clouds_and_precipitation", 
             "units": "K s-1", 
@@ -375,6 +394,7 @@
             "primavera_priority": "1"
         }, 
         "sfcWindmax": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed_of_gust", 
             "units": "m s-1", 
@@ -393,6 +413,7 @@
             "primavera_priority": "1"
         }, 
         "mrro": {
+            "frequency": "6hr", 
             "modeling_realm": "land", 
             "standard_name": "runoff_flux", 
             "units": "kg m-2 s-1", 
@@ -411,6 +432,7 @@
             "primavera_priority": "1"
         }, 
         "tntrl": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_convection", 
             "units": "K s-1", 
@@ -429,6 +451,7 @@
             "primavera_priority": "1"
         }, 
         "rsus": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -447,6 +470,7 @@
             "primavera_priority": "1"
         }, 
         "va4": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -465,6 +489,7 @@
             "primavera_priority": "1"
         }, 
         "hfls": {
+            "frequency": "6hr", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upward_latent_heat_flux", 
             "units": "W m-2", 

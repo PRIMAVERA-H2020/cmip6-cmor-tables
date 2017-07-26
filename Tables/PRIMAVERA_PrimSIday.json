@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table PrimSIday", 
         "realm": "seaIce", 
-        "frequency": "day", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "1.00000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "sidivvel": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "divergence_of_sea_ice_velocity", 
             "units": "s-1", 
@@ -33,6 +33,7 @@
             "primavera_priority": "1"
         }, 
         "sistrxdtop": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "surface_downward_x_stress", 
             "units": "N m-2", 
@@ -51,6 +52,7 @@
             "primavera_priority": "1"
         }, 
         "simassacrossline": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "sea_ice_transport_across_line", 
             "units": "kg s-1", 
@@ -69,6 +71,7 @@
             "primavera_priority": "1"
         }, 
         "sistrydtop": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "surface_downward_y_stress", 
             "units": "N m-2", 
@@ -87,6 +90,7 @@
             "primavera_priority": "1"
         }, 
         "sitimefrac": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "sea_ice_time_fraction", 
             "units": "1.0", 
@@ -105,6 +109,7 @@
             "primavera_priority": "1"
         }, 
         "sistryubot": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "sea_ice_base_upward_y_stress", 
             "units": "N m-2", 
@@ -123,6 +128,7 @@
             "primavera_priority": "1"
         }, 
         "sistrxubot": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "sea_ice_base_upward_x_stress", 
             "units": "N m-2", 
@@ -141,6 +147,7 @@
             "primavera_priority": "1"
         }, 
         "siforceintstry": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "internal_stress_in_sea_ice_y", 
             "units": "N m-2", 
@@ -159,6 +166,7 @@
             "primavera_priority": "1"
         }, 
         "siforceintstrx": {
+            "frequency": "day", 
             "modeling_realm": "seaIce", 
             "standard_name": "internal_stress_in_sea_ice_x", 
             "units": "N m-2", 

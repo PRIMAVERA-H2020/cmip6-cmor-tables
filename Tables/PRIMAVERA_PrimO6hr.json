@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table PrimO6hr", 
         "realm": "ocean", 
-        "frequency": "6hr", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "0.250000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "uo": {
+            "frequency": "6hr", 
             "modeling_realm": "ocean", 
             "standard_name": "sea_water_x_velocity", 
             "units": "m s-1", 
@@ -33,6 +33,7 @@
             "primavera_priority": "1"
         }, 
         "vo": {
+            "frequency": "6hr", 
             "modeling_realm": "ocean", 
             "standard_name": "sea_water_y_velocity", 
             "units": "m s-1", 

@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table Primmon", 
         "realm": "atmos", 
-        "frequency": "mon", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "30.00000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "tnsccwa": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_advection", 
             "units": "s-1", 
@@ -33,6 +33,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwmi": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_melting_from_cloud_ice", 
             "units": "s-1", 
@@ -51,6 +52,7 @@
             "primavera_priority": "2"
         }, 
         "tnscliricl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_cloud_liquid_water", 
             "units": "s-1", 
@@ -69,6 +71,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclihenv": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_water_vapor", 
             "units": "s-1", 
@@ -87,6 +90,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclias": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_accretion_to_snow", 
             "units": "s-1", 
@@ -105,6 +109,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwbfpcli": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_bergeron_findeisen_process_to_cloud_ice", 
             "units": "s-1", 
@@ -123,6 +128,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclihencl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_cloud_liquid_water", 
             "units": "s-1", 
@@ -141,6 +147,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccwacr": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_rain", 
             "units": "s-1", 
@@ -159,6 +166,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwac": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_autoconversion", 
             "units": "s-1", 
@@ -177,6 +185,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwri": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_riming", 
             "units": "s-1", 
@@ -195,6 +204,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclids": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_deposition_and_sublimation", 
             "units": "s-1", 
@@ -213,6 +223,7 @@
             "primavera_priority": "2"
         }, 
         "reffclwc": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_convective_cloud_liquid_water_particle", 
             "units": "m", 
@@ -231,6 +242,7 @@
             "primavera_priority": "1"
         }, 
         "tnsclirir": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_rain", 
             "units": "s-1", 
@@ -249,6 +261,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwhon": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_homogeneous_nucleation", 
             "units": "s-1", 
@@ -267,6 +280,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccwbl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_boundary_layer_mixing", 
             "units": "s-1", 
@@ -285,6 +299,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclw": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air", 
             "units": "s-1", 
@@ -303,6 +318,7 @@
             "primavera_priority": "2"
         }, 
         "lwp": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_cloud_liquid_water_content", 
             "units": "kg m-2", 
@@ -321,6 +337,7 @@
             "primavera_priority": "1"
         }, 
         "tnsclwa": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_advection", 
             "units": "s-1", 
@@ -339,6 +356,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclimcl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_cloud_liquid_water", 
             "units": "s-1", 
@@ -357,6 +375,7 @@
             "primavera_priority": "2"
         }, 
         "reffclws": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_stratiform_cloud_liquid_water_particle", 
             "units": "m", 
@@ -375,6 +394,7 @@
             "primavera_priority": "1"
         }, 
         "tnsclia": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_advection", 
             "units": "s-1", 
@@ -393,6 +413,7 @@
             "primavera_priority": "2"
         }, 
         "tnscli": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air", 
             "units": "s-1", 
@@ -411,6 +432,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwhen": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_heterogeneous_nucleation", 
             "units": "s-1", 
@@ -429,6 +451,7 @@
             "primavera_priority": "2"
         }, 
         "cdnc": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "number_concentration_of_cloud_liquid_water_particles_in_air", 
             "units": "m-3", 
@@ -447,6 +470,7 @@
             "primavera_priority": "1"
         }, 
         "tnsclihon": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_homogeneous_nucleation", 
             "units": "s-1", 
@@ -465,6 +489,7 @@
             "primavera_priority": "2"
         }, 
         "tnscliif": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_icefall", 
             "units": "s-1", 
@@ -483,9 +508,10 @@
             "primavera_priority": "2"
         }, 
         "cod": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_optical_thickness_due_to_cloud", 
-            "units": "1", 
+            "units": "1.0", 
             "cell_methods": "time: mean", 
             "cell_measures": "area: areacella", 
             "long_name": "cloud optical depth", 
@@ -501,6 +527,7 @@
             "primavera_priority": "1"
         }, 
         "tnsclimr": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_rain", 
             "units": "s-1", 
@@ -519,6 +546,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccwif": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_icefall", 
             "units": "s-1", 
@@ -537,6 +565,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclibl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_boundary_layer_mixing", 
             "units": "s-1", 
@@ -555,6 +584,7 @@
             "primavera_priority": "2"
         }, 
         "tnscliemi": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_evaporation_of_melting_ice", 
             "units": "s-1", 
@@ -573,6 +603,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccwce": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_condensation_and_evaporation", 
             "units": "s-1", 
@@ -591,6 +622,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccw": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air", 
             "units": "s-1", 
@@ -609,6 +641,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwcd": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_convective_detrainment", 
             "units": "s-1", 
@@ -627,6 +660,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwce": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation", 
             "units": "s-1", 
@@ -645,6 +679,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclicd": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_convective_detrainment", 
             "units": "s-1", 
@@ -663,6 +698,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccwcm": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_cloud_microphysics", 
             "units": "s-1", 
@@ -681,6 +717,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclibfpcl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_bergeron_findeisen_process_from_cloud_liquid", 
             "units": "s-1", 
@@ -699,6 +736,7 @@
             "primavera_priority": "2"
         }, 
         "tnsccwacs": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_snow", 
             "units": "s-1", 
@@ -717,6 +755,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwcm": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_cloud_microphysics", 
             "units": "s-1", 
@@ -735,6 +774,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclicm": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_cloud_microphysics", 
             "units": "s-1", 
@@ -753,6 +793,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwbl": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_boundary_layer_mixing", 
             "units": "s-1", 
@@ -771,6 +812,7 @@
             "primavera_priority": "2"
         }, 
         "tnscliag": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_aggregation", 
             "units": "s-1", 
@@ -789,6 +831,7 @@
             "primavera_priority": "2"
         }, 
         "clwvic": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_convective_cloud_condensed_water_content", 
             "units": "kg m-2", 
@@ -807,6 +850,7 @@
             "primavera_priority": "1"
         }, 
         "tnsclwar": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_rain", 
             "units": "s-1", 
@@ -825,6 +869,7 @@
             "primavera_priority": "2"
         }, 
         "tnsclwas": {
+            "frequency": "mon", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_snow", 
             "units": "s-1", 

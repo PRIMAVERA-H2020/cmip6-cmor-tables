@@ -1,11 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "01.00.07", 
+        "data_specs_version": "01.00.13", 
         "table_id": "Table Prim3hrPt", 
         "realm": "atmos", 
-        "frequency": "3hr", 
         "cmor_version": "3.2", 
-        "table_date": "22 April 2017", 
+        "table_date": "12 July 2017", 
         "missing_value": "1e20", 
         "product": "model-output", 
         "approx_interval": "0.125000", 
@@ -15,6 +14,7 @@
     }, 
     "variable_entry": {
         "vortmean": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_relative_vorticity", 
             "units": "s-1", 
@@ -33,6 +33,7 @@
             "primavera_priority": "1"
         }, 
         "ua100m": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -51,6 +52,7 @@
             "primavera_priority": "1"
         }, 
         "va100m": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -69,6 +71,7 @@
             "primavera_priority": "1"
         }, 
         "va50m": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -87,6 +90,7 @@
             "primavera_priority": "1"
         }, 
         "hus100": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
             "units": "m s-1", 
@@ -105,6 +109,7 @@
             "primavera_priority": "1"
         }, 
         "ua100": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -123,6 +128,7 @@
             "primavera_priority": "1"
         }, 
         "zg7h": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "geopotential_height", 
             "units": "m", 
@@ -141,6 +147,7 @@
             "primavera_priority": "1"
         }, 
         "hus1000": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "specific_humidity", 
             "units": "1.0", 
@@ -159,6 +166,7 @@
             "primavera_priority": "1"
         }, 
         "ta100": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "m s-1", 
@@ -177,6 +185,7 @@
             "primavera_priority": "1"
         }, 
         "ua1000": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
@@ -195,6 +204,7 @@
             "primavera_priority": "1"
         }, 
         "va100": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -213,6 +223,7 @@
             "primavera_priority": "1"
         }, 
         "va1000": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
@@ -231,6 +242,7 @@
             "primavera_priority": "1"
         }, 
         "ua50m": {
+            "frequency": "3hr", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
