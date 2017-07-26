@@ -97,44 +97,30 @@
         },
         "source_id":{
             "ECMWF-IFS-LR":{
-                "label_extended":"ECMWF-IFS-CY43R1 at low resolution",
-                "atmospheric_chemistry":"None",
-                "atmosphere":"IFS CY43R1 (TCo199, cubic octahedral reduced Gaussian grid equivalent to 200 latitude lines between the pole and equator; 91 levels; top level 1 hPa)",
-                "ocean_biogeochemistry":"None",
-                "release_year":"2017",
-                "cohort":[
-                    ""
+                "activity_participation":[
+                    "HighResMIP"
                 ],
-                "sea_ice":"LIM2 (same version as ocean)",
-                "label":"ECMWF-IFS-LR",
+                "cohort":[
+                    "Registered"
+                ],
                 "institution_id":[
                     "ECMWF"
                 ],
-                "land_surface":"H-TESSEL (same version as atmosphere)",
-                "aerosol":"None",
                 "source_id":"ECMWF-IFS-LR",
-                "ocean":"NEMO3.4 (ORCA1: tripolar, 360x200; 75 levels; top grid cell 5m)",
-                "land_ice":"None"
+                "source":"ECMWF-IFS-LR (2017): \natmos: IFS (IFS CY43R1, Tco199 cubic octahedral reduced Gaussian grid equivalent to 200 lines between the pole and equator using 4 grid-points per minimum wavelength; 91 levels; top level 1 hPa\nocean: NEMO3.4 (NEMO v3.4; ORCA1 tripolar grid; 362 x 292 longitude/latitude; 75 levels; top grid cell 1m)\nseaIce: LIM2 (LIM v2; ORCA1 tripolar grid; 362 x 292 longitude/latitude)\nland: HTESSEL (as implemented in IFS CY43R1)\naerosol: None\natmosChem: None\nocnBgchem: None\nlandIce: None\n"
             },
             "ECMWF-IFS-HR":{
-                "label_extended":"ECMWF-IFS-CY43R1 at high resolution",
-                "atmospheric_chemistry":"None",
-                "atmosphere":"IFS CY43R1 (TCo399, cubic octahedral reduced Gaussian grid equivalent to 400 latitude lines between the pole and equator; 91 levels; top level 1 hPa)",
-                "ocean_biogeochemistry":"None",
-                "release_year":"2017",
-                "cohort":[
-                    ""
+                "activity_participation":[
+                    "HighResMIP"
                 ],
-                "sea_ice":"LIM2 (same version as ocean)",
-                "label":"ECMWF-IFS-HR",
+                "cohort":[
+                    "Registered"
+                ],
                 "institution_id":[
                     "ECMWF"
                 ],
-                "land_surface":"H-TESSEL (same version as atmosphere)",
-                "aerosol":"None",
                 "source_id":"ECMWF-IFS-HR",
-                "ocean":"NEMO3.4 (ORCA025: tripolar, 1442x1921; 75 levels; top grid cell 5m)",
-                "land_ice":"None"
+                "source":"ECMWF-IFS-HR (2017): \natmos: IFS (IFS CY43R1, Tco399 cubic octahedral reduced Gaussian grid equivalent to 400 lines between the pole and equator using 4 grid-points per minimum wavelength; 91 levels; top level 1 hPa\nocean: NEMO3.4 (NEMO v3.4; ORCA025 tripolar grid; 1442 x 1021 longitude/latitude; 75 levels; top grid cell 1m)\nseaIce: LIM2 (LIM v2; ORCA-25 tripolar grid; 1442 x 1021 longitude/latitude)\nland: HTESSEL (as implemented in IFS CY43R1)\naerosol: None\natmosChem: None\nocnBgchem: None\nlandIce: None\n"
             },
             "ACCESS-1-0":{
                 "activity_participation":[
