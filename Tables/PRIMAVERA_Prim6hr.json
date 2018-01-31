@@ -396,7 +396,7 @@
         "sfcWindmax": {
             "frequency": "6hr", 
             "modeling_realm": "atmos", 
-            "standard_name": "wind_speed_of_gust", 
+            "standard_name": "wind_speed",
             "units": "m s-1", 
             "cell_methods": "time: maximum", 
             "cell_measures": "", 
