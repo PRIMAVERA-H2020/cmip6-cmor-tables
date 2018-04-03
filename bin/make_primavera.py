@@ -48,6 +48,8 @@ def generate_header(table_name):
 
     # copy the standard header items into the header
     header.update(HEADER_COMMON)
+    # TODO: add generic_levels
+    # (see https://github.com/jonseddon/cmip6-cmor-tables/issues/42)
 
     # set the table name
     header['table_id'] = 'Table {}'.format(table_name)
