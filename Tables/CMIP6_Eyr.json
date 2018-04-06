@@ -1,16 +1,17 @@
 {
     "Header": {
-        "data_specs_version": "01.00.13", 
+        "data_specs_version": "01.00.23", 
+        "cmor_version": "3.3", 
         "table_id": "Table Eyr", 
         "realm": "land", 
-        "cmor_version": "3.2", 
-        "table_date": "12 July 2017", 
+        "table_date": "21 March 2018", 
         "missing_value": "1e20", 
+        "int_missing_value": "-999", 
         "product": "model-output", 
         "approx_interval": "365", 
         "generic_levels": "alevel olevel", 
         "mip_era": "CMIP6", 
-        "Conventions": "CF-1.7 CMIP-6.0"
+        "Conventions": "CF-1.7 CMIP-6.2"
     }, 
     "variable_entry": {
         "baresoilFrac": {
@@ -32,7 +33,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cLitter": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "litter_carbon_content", 
             "units": "kg m-2", 
@@ -50,7 +51,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cLitterLut": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "litter_carbon_content", 
             "units": "kg m-2", 
@@ -60,7 +61,7 @@
             "comment": "end of year values (not annual mean)", 
             "dimensions": "longitude latitude landUse time1", 
             "out_name": "cLitterLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -68,7 +69,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cProduct": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "carbon_content_of_products_of_anthropogenic_land_use_change", 
             "units": "kg m-2", 
@@ -86,9 +87,9 @@
             "ok_max_mean_abs": ""
         }, 
         "cProductLut": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
-            "standard_name": "carbon_content_in_wood_and_agricultural_products", 
+            "standard_name": "carbon_content_of_products_of_anthropogenic_land_use_change", 
             "units": "kg m-2", 
             "cell_methods": "area: mean where landuse time: point", 
             "cell_measures": "area: areacella", 
@@ -96,7 +97,7 @@
             "comment": "anthropogenic pools associated with land use tiles into which harvests and cleared carbon are deposited before release into atmosphere PLUS any remaining anthropogenic pools that may be associated with lands which were converted into land use tiles during reported period . Does NOT include residue which is deposited into soil or litter; end of year values (not annual mean)", 
             "dimensions": "longitude latitude landUse time1", 
             "out_name": "cProductLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -104,7 +105,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cSoil": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "soil_carbon_content", 
             "units": "kg m-2", 
@@ -122,7 +123,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cSoilLut": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "soil_carbon_content", 
             "units": "kg m-2", 
@@ -132,7 +133,7 @@
             "comment": "end of year values (not annual mean)", 
             "dimensions": "longitude latitude landUse time1", 
             "out_name": "cSoilLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -140,7 +141,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cVeg": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "vegetation_carbon_content", 
             "units": "kg m-2", 
@@ -158,7 +159,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cVegLut": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "vegetation_carbon_content", 
             "units": "kg m-2", 
@@ -168,7 +169,7 @@
             "comment": "end of year values (not annual mean)", 
             "dimensions": "longitude latitude landUse time1", 
             "out_name": "cVegLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -204,7 +205,7 @@
             "comment": "cumulative fractional transitions over the year; note that fraction should be reported as fraction of atmospheric grid cell", 
             "dimensions": "longitude latitude landUse time", 
             "out_name": "fracInLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -212,7 +213,7 @@
             "ok_max_mean_abs": ""
         }, 
         "fracLut": {
-            "frequency": "yr", 
+            "frequency": "yrPt", 
             "modeling_realm": "land", 
             "standard_name": "area_fraction", 
             "units": "%", 
@@ -222,7 +223,7 @@
             "comment": "end of year values (not annual mean); note that fraction should be reported as fraction of land grid cell (example: frac_lnd = 0.5, frac_ocn = 0.5, frac_crop_lnd = 0.2 (of land portion of grid cell), then frac_lut(crop) = 0.5*0.2 = 0.1)", 
             "dimensions": "longitude latitude landUse time1", 
             "out_name": "fracLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -240,7 +241,7 @@
             "comment": "cumulative fractional transitions over the year; note that fraction should be reported as fraction of atmospheric grid cell", 
             "dimensions": "longitude latitude landUse time", 
             "out_name": "fracOutLut", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -330,7 +331,7 @@
             "comment": "fraction of grid cell that is covered by vegetation.This SHOULD be the sum of tree, grass, crop and shrub fractions.", 
             "dimensions": "longitude latitude time typeveg", 
             "out_name": "vegFrac", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
