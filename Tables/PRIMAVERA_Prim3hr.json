@@ -21,7 +21,7 @@
             "units": "m s-1", 
             "cell_methods": "time: maximum", 
             "cell_measures": "", 
-            "long_name": "Near-Surface Wind Speed", 
+            "long_name": "Maximum Near-Surface Wind Speed",
             "comment": "near-surface (usually, 10 meters) wind speed.", 
             "dimensions": "longitude latitude height10m time", 
             "out_name": "sfcWindmax", 
