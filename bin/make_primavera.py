@@ -25,14 +25,15 @@ from openpyxl import load_workbook
 EXCEL_FILE = 'PRIMAVERA_Data_Request_v01_00_13.xlsx'
 
 HEADER_COMMON = {
-    'data_specs_version': '01.00.13',
-    'cmor_version': '3.2',
-    'table_date': '12 July 2017',
+    'data_specs_version': '01.00.23',
+    'cmor_version': '3.3',
+    'table_date': '21 March 2018',
     'missing_value': '1e20',
+    'int_missing_value': '-999',
     'product': 'model-output',
     'generic_levels': '',
     'mip_era': 'PRIMAVERA',
-    'Conventions': 'CF-1.7 CMIP-6.0'
+    'Conventions': 'CF-1.7 CMIP-6.2'
 }
 
 
@@ -48,8 +49,6 @@ def generate_header(table_name):
 
     # copy the standard header items into the header
     header.update(HEADER_COMMON)
-    # TODO: add generic_levels
-    # (see https://github.com/jonseddon/cmip6-cmor-tables/issues/42)
 
     # set the table name
     header['table_id'] = 'Table {}'.format(table_name)
@@ -76,9 +75,16 @@ def generate_header(table_name):
     # create a blank realm, which will be populated later
     header['realm'] = ''
 
-    ordered_keys = ['data_specs_version', 'table_id', 'realm', 'frequency',
-                    'cmor_version', 'table_date', 'missing_value', 'product',
-                    'approx_interval', 'generic_levels', 'mip_era',
+    # Set the generic_levels for several PRIMAVERA tables that need it
+    if table_name in ['PrimO6hr', 'PrimOday', 'PrimOmon']:
+        header['generic_levels'] = 'olevel'
+    elif table_name in ['Prim6hr', 'Primmon']:
+        header['generic_levels'] = 'alevel'
+
+
+    ordered_keys = ['data_specs_version', 'cmor_version', 'table_id', 'realm',
+                    'table_date', 'missing_value', 'int_missing_value',
+                    'product', 'approx_interval', 'generic_levels', 'mip_era',
                     'Conventions']
     key_order = {key: index for index, key in enumerate(ordered_keys)}
 
