@@ -1,16 +1,17 @@
 {
     "Header": {
-        "data_specs_version": "01.00.13", 
+        "data_specs_version": "01.00.23", 
+        "cmor_version": "3.3", 
         "table_id": "Table E1hr", 
         "realm": "atmos", 
-        "cmor_version": "3.2", 
-        "table_date": "12 July 2017", 
+        "table_date": "21 March 2018", 
         "missing_value": "1e20", 
+        "int_missing_value": "-999", 
         "product": "model-output", 
         "approx_interval": "0.017361", 
         "generic_levels": "", 
         "mip_era": "CMIP6", 
-        "Conventions": "CF-1.7 CMIP-6.0"
+        "Conventions": "CF-1.7 CMIP-6.2"
     }, 
     "variable_entry": {
         "pr": {
@@ -24,7 +25,7 @@
             "comment": "includes both liquid and solid phases", 
             "dimensions": "longitude latitude time", 
             "out_name": "pr", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -50,7 +51,7 @@
             "ok_max_mean_abs": ""
         }, 
         "psl": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_pressure_at_sea_level", 
             "units": "Pa", 
@@ -68,17 +69,17 @@
             "ok_max_mean_abs": ""
         }, 
         "rlut": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "toa_outgoing_longwave_flux", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
-            "long_name": "TOA Outgoing Longwave Radiatio", 
+            "long_name": "TOA Outgoing Longwave Radiation", 
             "comment": "at the top of the atmosphere (to be compared with satellite measurements)", 
             "dimensions": "longitude latitude time1", 
             "out_name": "rlut", 
-            "type": "", 
+            "type": "real", 
             "positive": "up", 
             "valid_min": "", 
             "valid_max": "", 
@@ -86,7 +87,7 @@
             "ok_max_mean_abs": ""
         }, 
         "ta": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -96,7 +97,7 @@
             "comment": "Air Temperature", 
             "dimensions": "longitude latitude plev3 time1", 
             "out_name": "ta", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -104,7 +105,7 @@
             "ok_max_mean_abs": ""
         }, 
         "ta27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -114,7 +115,7 @@
             "comment": "Air Temperature", 
             "dimensions": "longitude latitude plev27 time1", 
             "out_name": "ta", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -122,7 +123,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tntr27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_radiative_heating", 
             "units": "K s-1", 
@@ -140,17 +141,17 @@
             "ok_max_mean_abs": ""
         }, 
         "ua": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Eastward Wind", 
-            "comment": "", 
+            "comment": "'Eastward' indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)", 
             "dimensions": "longitude latitude plev3 time1", 
             "out_name": "ua", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -158,17 +159,17 @@
             "ok_max_mean_abs": ""
         }, 
         "ua27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "eastward_wind", 
             "units": "m s-1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Eastward Wind", 
-            "comment": "", 
+            "comment": "'Eastward' indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)", 
             "dimensions": "longitude latitude plev27 time1", 
             "out_name": "ua", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -176,7 +177,7 @@
             "ok_max_mean_abs": ""
         }, 
         "utendnogw27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag", 
             "units": "m s-2", 
@@ -186,7 +187,7 @@
             "comment": "Tendency of the eastward wind by parameterized nonorographic gravity waves.", 
             "dimensions": "longitude latitude plev27 time1", 
             "out_name": "utendnogw", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -194,17 +195,17 @@
             "ok_max_mean_abs": ""
         }, 
         "va": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Northward Wind", 
-            "comment": "", 
+            "comment": "'Northward' indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)", 
             "dimensions": "longitude latitude plev3 time1", 
             "out_name": "va", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -212,17 +213,17 @@
             "ok_max_mean_abs": ""
         }, 
         "va27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "northward_wind", 
             "units": "m s-1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Northward Wind", 
-            "comment": "", 
+            "comment": "'Northward' indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)", 
             "dimensions": "longitude latitude plev27 time1", 
             "out_name": "va", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -230,7 +231,7 @@
             "ok_max_mean_abs": ""
         }, 
         "vtendnogw27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_northward_wind_due_to_nonorographic_gravity_wave_drag", 
             "units": "m s-2", 
@@ -240,7 +241,7 @@
             "comment": "Tendency of the northward wind by parameterized nonorographic gravity waves.  (Note that CF name tables only have a general northward tendency for all gravity waves, and we need it separated by type.)", 
             "dimensions": "longitude latitude plev27 time1", 
             "out_name": "vtendnogw", 
-            "type": "", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -248,7 +249,7 @@
             "ok_max_mean_abs": ""
         }, 
         "wap": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "lagrangian_tendency_of_air_pressure", 
             "units": "Pa s-1", 
@@ -266,7 +267,7 @@
             "ok_max_mean_abs": ""
         }, 
         "wap27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "lagrangian_tendency_of_air_pressure", 
             "units": "Pa s-1", 
@@ -284,17 +285,17 @@
             "ok_max_mean_abs": ""
         }, 
         "zg27": {
-            "frequency": "1hr", 
+            "frequency": "1hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "geopotential_height", 
             "units": "m", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Geopotential Height", 
-            "comment": "", 
+            "comment": "Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name height, which is relative to the surface.", 
             "dimensions": "longitude latitude plev27 time1", 
             "out_name": "zg", 
-            "type": "float", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 

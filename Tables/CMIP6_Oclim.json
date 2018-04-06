@@ -1,20 +1,21 @@
 {
     "Header": {
-        "data_specs_version": "01.00.13", 
+        "data_specs_version": "01.00.23", 
+        "cmor_version": "3.3", 
         "table_id": "Table Oclim", 
         "realm": "ocean", 
-        "cmor_version": "3.2", 
-        "table_date": "12 July 2017", 
+        "table_date": "21 March 2018", 
         "missing_value": "1e20", 
+        "int_missing_value": "-999", 
         "product": "model-output", 
         "approx_interval": "30.00000", 
         "generic_levels": "olevel", 
         "mip_era": "CMIP6", 
-        "Conventions": "CF-1.7 CMIP-6.0"
+        "Conventions": "CF-1.7 CMIP-6.2"
     }, 
     "variable_entry": {
         "difmxybo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_momentum_xy_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -32,7 +33,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difmxybo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_momentum_xy_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -50,7 +51,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difmxylo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_momentum_xy_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -68,7 +69,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difmxylo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_momentum_xy_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -86,7 +87,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrbbo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_bolus_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -104,7 +105,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrbbo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_bolus_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -122,7 +123,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrblo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_bolus_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -140,7 +141,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrblo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_bolus_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -158,7 +159,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrebo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_epineutral_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -176,7 +177,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrebo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_epineutral_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -194,7 +195,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrelo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_epineutral_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -212,7 +213,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrelo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_epineutral_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -230,7 +231,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrxybo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_xy_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -248,7 +249,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrxybo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_xy_biharmonic_diffusivity", 
             "units": "m4 s-1", 
@@ -266,7 +267,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrxylo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_xy_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -284,7 +285,7 @@
             "ok_max_mean_abs": ""
         }, 
         "diftrxylo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_tracer_xy_laplacian_diffusivity", 
             "units": "m2 s-1", 
@@ -302,7 +303,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvho": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_heat_diffusivity", 
             "units": "m2 s-1", 
@@ -320,7 +321,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvmbo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_momentum_diffusivity_due_to_background", 
             "units": "m2 s-1", 
@@ -338,7 +339,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvmfdo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_momentum_diffusivity_due_to_form_drag", 
             "units": "m2 s-1", 
@@ -356,7 +357,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvmo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_momentum_diffusivity", 
             "units": "m2 s-1", 
@@ -374,7 +375,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvmto": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_momentum_diffusivity_due_to_tides", 
             "units": "m2 s-1", 
@@ -392,7 +393,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvso": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_salt_diffusivity", 
             "units": "m2 s-1", 
@@ -410,7 +411,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvtrbo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_tracer_diffusivity_due_to_background", 
             "units": "m2 s-1", 
@@ -428,7 +429,7 @@
             "ok_max_mean_abs": ""
         }, 
         "difvtrto": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_vertical_tracer_diffusivity_due_to_tides", 
             "units": "m2 s-1", 
@@ -446,7 +447,7 @@
             "ok_max_mean_abs": ""
         }, 
         "dispkevfo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_kinetic_energy_dissipation_per_unit_area_due_to_vertical_friction", 
             "units": "W m-2", 
@@ -464,7 +465,7 @@
             "ok_max_mean_abs": ""
         }, 
         "dispkexyfo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction", 
             "units": "W m-2", 
@@ -482,7 +483,7 @@
             "ok_max_mean_abs": ""
         }, 
         "dispkexyfo2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction", 
             "units": "W m-2", 
@@ -500,9 +501,9 @@
             "ok_max_mean_abs": ""
         }, 
         "tnkebto": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
-            "standard_name": "tendency_of_ocean_eddy_kinetic_energy_content_due_to_bolus_transport", 
+            "standard_name": "tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: mean within years time: mean over years", 
             "cell_measures": "area: areacello volume: volcello", 
@@ -518,9 +519,9 @@
             "ok_max_mean_abs": ""
         }, 
         "tnkebto2d": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
-            "standard_name": "tendency_of_ocean_eddy_kinetic_energy_content_due_to_bolus_transport", 
+            "standard_name": "tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: mean within years time: mean over years", 
             "cell_measures": "area: areacello", 
@@ -536,7 +537,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tnpeo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "tendency_of_ocean_potential_energy_content", 
             "units": "W m-2", 
@@ -554,7 +555,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tnpeot": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "tendency_of_ocean_potential_energy_content_due_to_tides", 
             "units": "W m-2", 
@@ -572,7 +573,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tnpeotb": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "tendency_of_ocean_potential_energy_content_due_to_background", 
             "units": "W m-2", 
@@ -590,7 +591,7 @@
             "ok_max_mean_abs": ""
         }, 
         "zfullo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "depth_below_geoid", 
             "units": "m", 
@@ -608,7 +609,7 @@
             "ok_max_mean_abs": ""
         }, 
         "zhalfo": {
-            "frequency": "monClim", 
+            "frequency": "monC", 
             "modeling_realm": "ocean", 
             "standard_name": "depth_below_geoid", 
             "units": "m", 

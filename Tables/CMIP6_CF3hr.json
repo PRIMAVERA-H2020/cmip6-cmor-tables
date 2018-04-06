@@ -1,23 +1,24 @@
 {
     "Header": {
-        "data_specs_version": "01.00.13", 
+        "data_specs_version": "01.00.23", 
+        "cmor_version": "3.3", 
         "table_id": "Table CF3hr", 
         "realm": "atmos", 
-        "cmor_version": "3.2", 
-        "table_date": "12 July 2017", 
+        "table_date": "21 March 2018", 
         "missing_value": "1e20", 
+        "int_missing_value": "-999", 
         "product": "model-output", 
         "approx_interval": "0.125000", 
         "generic_levels": "alevel alevhalf", 
         "mip_era": "CMIP6", 
-        "Conventions": "CF-1.7 CMIP-6.0"
+        "Conventions": "CF-1.7 CMIP-6.2"
     }, 
     "variable_entry": {
         "ci": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convection_time_fraction", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Fraction of Time Convection Occurs", 
@@ -32,7 +33,7 @@
             "ok_max_mean_abs": ""
         }, 
         "clc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_cloud_area_fraction_in_atmosphere_layer", 
             "units": "%", 
@@ -50,10 +51,10 @@
             "ok_max_mean_abs": ""
         }, 
         "clic": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "mass_fraction_of_convective_cloud_ice_in_air", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Mass Fraction of Convective Cloud Ice", 
@@ -68,10 +69,10 @@
             "ok_max_mean_abs": ""
         }, 
         "clis": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "mass_fraction_of_stratiform_cloud_ice_in_air", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Mass Fraction of Stratiform Cloud Ice", 
@@ -86,7 +87,7 @@
             "ok_max_mean_abs": ""
         }, 
         "clivi": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_cloud_ice_content", 
             "units": "kg m-2", 
@@ -104,7 +105,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cls": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "stratiform_cloud_area_fraction_in_atmosphere_layer", 
             "units": "%", 
@@ -122,7 +123,7 @@
             "ok_max_mean_abs": ""
         }, 
         "clt": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "cloud_area_fraction", 
             "units": "%", 
@@ -140,7 +141,7 @@
             "ok_max_mean_abs": ""
         }, 
         "cltc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_cloud_area_fraction", 
             "units": "%", 
@@ -158,10 +159,10 @@
             "ok_max_mean_abs": ""
         }, 
         "clwc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "mass_fraction_of_convective_cloud_liquid_water_in_air", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Mass Fraction of Convective Cloud Liquid Water", 
@@ -176,10 +177,10 @@
             "ok_max_mean_abs": ""
         }, 
         "clws": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "mass_fraction_of_stratiform_cloud_liquid_water_in_air", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Mass Fraction of Stratiform Cloud Liquid Water", 
@@ -194,7 +195,7 @@
             "ok_max_mean_abs": ""
         }, 
         "clwvi": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_cloud_condensed_water_content", 
             "units": "kg m-2", 
@@ -212,10 +213,10 @@
             "ok_max_mean_abs": ""
         }, 
         "demc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_cloud_longwave_emissivity", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Convective Cloud Emissivity", 
@@ -230,10 +231,10 @@
             "ok_max_mean_abs": ""
         }, 
         "dems": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "stratiform_cloud_longwave_emissivity", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Stratiform Cloud Emissivity", 
@@ -248,10 +249,10 @@
             "ok_max_mean_abs": ""
         }, 
         "dtauc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_optical_thickness_due_to_convective_cloud", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Convective Cloud Optical Depth", 
@@ -266,10 +267,10 @@
             "ok_max_mean_abs": ""
         }, 
         "dtaus": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_optical_thickness_due_to_stratiform_cloud", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Stratiform Cloud Optical Depth", 
@@ -284,7 +285,7 @@
             "ok_max_mean_abs": ""
         }, 
         "evspsbl": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "water_evaporation_flux", 
             "units": "kg m-2 s-1", 
@@ -302,7 +303,7 @@
             "ok_max_mean_abs": ""
         }, 
         "grpllsprof": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "large_scale_graupel_flux", 
             "units": "kg m-2 s-1", 
@@ -320,10 +321,10 @@
             "ok_max_mean_abs": ""
         }, 
         "h2o": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "mass_fraction_of_water_in_air", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Mass Fraction of Water", 
@@ -338,14 +339,14 @@
             "ok_max_mean_abs": ""
         }, 
         "hfls": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upward_latent_heat_flux", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Surface Upward Latent Heat Flux", 
-            "comment": "", 
+            "comment": "The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.", 
             "dimensions": "longitude latitude time1", 
             "out_name": "hfls", 
             "type": "real", 
@@ -356,14 +357,14 @@
             "ok_max_mean_abs": ""
         }, 
         "hfss": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upward_sensible_heat_flux", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Surface Upward Sensible Heat Flux", 
-            "comment": "", 
+            "comment": "The surface called 'surface' means the lower boundary of the atmosphere. 'Upward' indicates a vector component which is positive when directed upward (negative downward). The surface sensible heat flux, also called 'turbulent' heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.", 
             "dimensions": "longitude latitude time1", 
             "out_name": "hfss", 
             "type": "real", 
@@ -374,7 +375,7 @@
             "ok_max_mean_abs": ""
         }, 
         "hurs": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "relative_humidity", 
             "units": "%", 
@@ -392,7 +393,7 @@
             "ok_max_mean_abs": ""
         }, 
         "pfull": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_pressure", 
             "units": "Pa", 
@@ -410,13 +411,13 @@
             "ok_max_mean_abs": ""
         }, 
         "phalf": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_pressure", 
             "units": "Pa", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
-            "long_name": "Pressure at Model Half-Levels", 
+            "long_name": "Pressure on Model Half-Levels", 
             "comment": "Air pressure on model half-levels", 
             "dimensions": "longitude latitude alevhalf time1", 
             "out_name": "phalf", 
@@ -428,7 +429,7 @@
             "ok_max_mean_abs": ""
         }, 
         "pr": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "precipitation_flux", 
             "units": "kg m-2 s-1", 
@@ -446,7 +447,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_precipitation_flux", 
             "units": "kg m-2 s-1", 
@@ -464,7 +465,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prcprof": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_rainfall_flux", 
             "units": "kg m-2 s-1", 
@@ -482,7 +483,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prlsns": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "large_scale_snowfall_flux", 
             "units": "kg m-2 s-1", 
@@ -500,7 +501,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prlsprof": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "large_scale_rainfall_flux", 
             "units": "kg m-2 s-1", 
@@ -518,7 +519,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prsn": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "snowfall_flux", 
             "units": "kg m-2 s-1", 
@@ -536,7 +537,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prsnc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_snowfall_flux", 
             "units": "kg m-2 s-1", 
@@ -554,7 +555,7 @@
             "ok_max_mean_abs": ""
         }, 
         "prw": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_water_vapor_content", 
             "units": "kg m-2", 
@@ -572,7 +573,7 @@
             "ok_max_mean_abs": ""
         }, 
         "ps": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_air_pressure", 
             "units": "Pa", 
@@ -582,7 +583,7 @@
             "comment": "surface pressure (not mean sea-level pressure), 2-D field to calculate the 3-D pressure field from hybrid coordinates", 
             "dimensions": "longitude latitude time1", 
             "out_name": "ps", 
-            "type": "float", 
+            "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
@@ -590,7 +591,7 @@
             "ok_max_mean_abs": ""
         }, 
         "psl": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_pressure_at_sea_level", 
             "units": "Pa", 
@@ -608,7 +609,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffclic": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_convective_cloud_ice_particle", 
             "units": "m", 
@@ -626,7 +627,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffclis": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_stratiform_cloud_ice_particle", 
             "units": "m", 
@@ -644,7 +645,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffclwc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_convective_cloud_liquid_water_particle", 
             "units": "m", 
@@ -662,7 +663,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffclws": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_stratiform_cloud_liquid_water_particle", 
             "units": "m", 
@@ -680,7 +681,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffgrpls": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_stratiform_cloud_graupel_particle", 
             "units": "m", 
@@ -698,7 +699,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffrainc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_convective_cloud_rain_particle", 
             "units": "m", 
@@ -716,7 +717,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffrains": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_stratiform_cloud_rain_particle", 
             "units": "m", 
@@ -734,7 +735,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffsnowc": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_convective_cloud_snow_particle", 
             "units": "m", 
@@ -752,7 +753,7 @@
             "ok_max_mean_abs": ""
         }, 
         "reffsnows": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "effective_radius_of_stratiform_cloud_snow_particle", 
             "units": "m", 
@@ -770,14 +771,14 @@
             "ok_max_mean_abs": ""
         }, 
         "rlds": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_longwave_flux_in_air", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Surface Downwelling Longwave Radiation", 
-            "comment": "", 
+            "comment": "The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Downwelling radiation is radiation from above. It does not mean 'net downward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.", 
             "dimensions": "longitude latitude time1", 
             "out_name": "rlds", 
             "type": "real", 
@@ -788,7 +789,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rldscs": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_longwave_flux_in_air_assuming_clear_sky", 
             "units": "W m-2", 
@@ -806,14 +807,14 @@
             "ok_max_mean_abs": ""
         }, 
         "rlus": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upwelling_longwave_flux_in_air", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Surface Upwelling Longwave Radiation", 
-            "comment": "", 
+            "comment": "The surface called 'surface' means the lower boundary of the atmosphere. 'longwave' means longwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.", 
             "dimensions": "longitude latitude time1", 
             "out_name": "rlus", 
             "type": "real", 
@@ -824,7 +825,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rlut": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "toa_outgoing_longwave_flux", 
             "units": "W m-2", 
@@ -842,14 +843,14 @@
             "ok_max_mean_abs": ""
         }, 
         "rlutcs": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "toa_outgoing_longwave_flux_assuming_clear_sky", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "TOA Outgoing Clear-Sky Longwave Radiation", 
-            "comment": "", 
+            "comment": "Upwelling clear-sky longwave radiation at top of atmosphere", 
             "dimensions": "longitude latitude time1", 
             "out_name": "rlutcs", 
             "type": "real", 
@@ -860,7 +861,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rsds": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
@@ -878,7 +879,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rsdscs": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downwelling_shortwave_flux_in_air_assuming_clear_sky", 
             "units": "W m-2", 
@@ -896,7 +897,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rsdt": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "toa_incoming_shortwave_flux", 
             "units": "W m-2", 
@@ -914,14 +915,14 @@
             "ok_max_mean_abs": ""
         }, 
         "rsus": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upwelling_shortwave_flux_in_air", 
             "units": "W m-2", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Surface Upwelling Shortwave Radiation", 
-            "comment": "", 
+            "comment": "The surface called 'surface' means the lower boundary of the atmosphere. 'shortwave' means shortwave radiation. Upwelling radiation is radiation from below. It does not mean 'net upward'. When thought of as being incident on a surface, a radiative flux is sometimes called 'irradiance'. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called 'vector irradiance'. In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.", 
             "dimensions": "longitude latitude time1", 
             "out_name": "rsus", 
             "type": "real", 
@@ -932,7 +933,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rsuscs": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_upwelling_shortwave_flux_in_air_assuming_clear_sky", 
             "units": "W m-2", 
@@ -950,7 +951,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rsut": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "toa_outgoing_shortwave_flux", 
             "units": "W m-2", 
@@ -968,7 +969,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rsutcs": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "toa_outgoing_shortwave_flux_assuming_clear_sky", 
             "units": "W m-2", 
@@ -986,7 +987,7 @@
             "ok_max_mean_abs": ""
         }, 
         "rtmt": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "net_downward_radiative_flux_at_top_of_atmosphere_model", 
             "units": "W m-2", 
@@ -1004,7 +1005,7 @@
             "ok_max_mean_abs": ""
         }, 
         "sbl": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "landIce", 
             "standard_name": "surface_snow_and_ice_sublimation_flux", 
             "units": "kg m-2 s-1", 
@@ -1022,10 +1023,10 @@
             "ok_max_mean_abs": ""
         }, 
         "sci": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "shallow_convection_time_fraction", 
-            "units": "1.0", 
+            "units": "1", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Fraction of Time Shallow Convection Occurs", 
@@ -1040,7 +1041,7 @@
             "ok_max_mean_abs": ""
         }, 
         "sfcWind": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "wind_speed", 
             "units": "m s-1", 
@@ -1058,7 +1059,7 @@
             "ok_max_mean_abs": ""
         }, 
         "ta": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "air_temperature", 
             "units": "K", 
@@ -1076,7 +1077,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tauu": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downward_eastward_stress", 
             "units": "Pa", 
@@ -1094,7 +1095,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tauv": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downward_northward_stress", 
             "units": "Pa", 
@@ -1112,7 +1113,7 @@
             "ok_max_mean_abs": ""
         }, 
         "ts": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_temperature", 
             "units": "K", 
@@ -1130,14 +1131,14 @@
             "ok_max_mean_abs": ""
         }, 
         "zfull": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "height_above_reference_ellipsoid", 
             "units": "m", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Altitude of Model Full-Levels", 
-            "comment": "", 
+            "comment": "'Height_above_X' means the vertical distance above the named surface X. A reference ellipsoid is a mathematical figure that approximates the geoid. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.", 
             "dimensions": "longitude latitude alevel time1", 
             "out_name": "zfull", 
             "type": "real", 
@@ -1148,14 +1149,14 @@
             "ok_max_mean_abs": ""
         }, 
         "zhalf": {
-            "frequency": "3hr", 
+            "frequency": "3hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "height_above_reference_ellipsoid", 
             "units": "m", 
             "cell_methods": "area: mean time: point", 
             "cell_measures": "area: areacella", 
             "long_name": "Altitude of Model Half-Levels", 
-            "comment": "", 
+            "comment": "'Height_above_X' means the vertical distance above the named surface X. A reference ellipsoid is a mathematical figure that approximates the geoid. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.", 
             "dimensions": "longitude latitude alevhalf time1", 
             "out_name": "zhalf", 
             "type": "real", 
