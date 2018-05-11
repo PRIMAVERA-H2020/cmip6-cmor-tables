@@ -18,5 +18,5 @@ openpyxl version 2.4.1. This can easily be installed into a virtualenv with:
 $ pip install openpyxl==2.4.1
 ```
 
-Please report any bugs through [Github](https://github.com/jonseddon/cmip6-cmor-tables)
+Please report any bugs through [Github](https://github.com/PRIMAVERA-H2020/cmip6-cmor-tables)
 or email Jon Seddon jon.seddon@metoffice.gov.uk.
