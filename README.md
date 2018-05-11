@@ -1,4 +1,5 @@
 # primavera-cmor-tables
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1245673.svg)](https://doi.org/10.5281/zenodo.1245673)
 
 A fork of https://github.com/PCMDI/cmip6-cmor-tables for the PRIMAVERA project.
 
